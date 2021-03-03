@@ -59,8 +59,8 @@ const app = Vue.createApp({
             day: null,
             month: null,
             year: null,
-            submitComple: false,
-            img:"images/Me.jpg"
+            submitComplete: false,
+            img: "images/Me.jpg"
         }
     },
     methods: {
@@ -79,14 +79,14 @@ const app = Vue.createApp({
                 constraints)
             if (!this.errors) {
                 alert("Registered successfully.")
-                this.submitComple = true;
-            } else {
-                alert("Your profile is not update, please check your profile")
+                this.submitComplete = true;
             }
         },
         submitForm() {
-            if (this.submitComple) {
+            if (this.submitComplete) {
                 alert("Your profile is updated successfully.")
+            }else {
+                alert("Your profile is not update, please check your profile")
             }
         }
     }
